@@ -9,67 +9,79 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <div id="my-name"><a href="#hello">Ishraq Afzal</a></div>
+        <a id="top">
+        <header id="header">
+            <a id="my-name" href="#top">ISHRAQ AFZAL</a>
             <nav id="nav-bar">
                 <ul>
-                    <li class="nav-item"><a href="#about">About</a></li>
-                    <li class="nav-item"><a href="#skills">Skills</a></li>
-                    <li class="nav-item"><a href="#experience">Experience</a></li>
-                    <li class="nav-item"><a href="#projects">Projects</a></li>
-                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                    <li><a class="nav-item" href="#about">About</a></li>
+                    <li><a class="nav-item" href="#skills">Skills</a></li>
+                    <li><a class="nav-item" href="#experience">Experience</a></li>
+                    <li><a class="nav-item" href="#projects">Projects</a></li>
+                    <li><a class="nav-item" href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <nav id="hamburger-menu">
+            <!--<nav id="hamburger-menu">
                 <ul>
-                    <li class="burger-item"><a href="#about">About</a></li>
-                    <li class="nav-item"><a href="#skills">Skills</a></li>
-                    <li class="burger-item"><a href="#experience">Experience</a></li>
-                    <li class="burger-item"><a href="#projects">Projects</a></li>
-                    <li class="burger-item"><a href="#contact">Contact</a></li>
+                    <li><a class="nav-item" href="#about">About</a></li>
+                    <li><a class="nav-item" href="#skills">Skills</a></li>
+                    <li><a class="nav-item" href="#experience">Experience</a></li>
+                    <li><a class="nav-item" href="#projects">Projects</a></li>
+                    <li><a class="nav-item" href="#contact">Contact</a></li>
                 </ul>
-            </nav>
+            </nav> -->
         </header>
-            <section id="hello">
-                <img src="/images/myself-pic.jpg">
-                <div id="hello-text">Hello I am</div>
-                <div id="name">ISHRAQ AFZAL</div>
-                <div id="role-list">Fullstack Developer</div>
-                <div id="cv">Download CV</div>
-                <img id="linked-in" src="/images/linkedin logo.png">
-                <img id="github" src="images/github logo.png">
+            <section id="profile">
+                    <div id="hello-text">HELLO, I AM</div>
+                    <div id="first-name">ISHRAQ</div>
+                    <div id="second-name">AFZAL</div>
+                    <!-- <div id="role-list"> FULLSTACK DEVELOPMENT |  ARTIFICIAL INTELLIGENCE |  MACHINE LEARNING</div> -->
+                    <div id="button-containers">
+                        <div id="cv" class="button">DOWNLOAD CV</div>
+                        <div id="linkedin" class="button">MY LINKEDIN</div>
+                        <div id="github" class="button">MY GITHUB</div>
+                    </div>
             </section>
             <section id="about">
-                <h1>About Me</h1>
-                <div id="about-me-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sequi dolorem fugiat itaque nostrum, voluptates debitis, dolores suscipit eum modi accusantium nulla consectetur ab minima totam earum explicabo perferendis minus!</div>
+                <h1 id="about-title">About Me</h1>
+                <div id="about-container">
+                    <img id="myself-pic" src="/images/myself.jpg">
+                    <div id="about-me-paragraph">
+                        I am Ishraq Afzal and I am currently a rising Computer Science junior at The University of Hong Kong. I am passionate about fullstack development, artificial intelligence & machine learning, algorithms, and math. When I am not getting my hands dirty with code, you might find me in the gym, football field, or with a book in the library. Feel free to explore my personal website where you'll find information about my skills, work experience, and projects. If you want to reach out to me, please click <a id="here" href="#contact" style="color:skyblue; text-decoration: underline;">here</a>
+                    </div>
+                </div>
             </section>
             <section id="skills">
-                <h1>Skills</h1>
-                <div id="languages">
-                    <h2>Languages</h2>
-                    <ul>
-                        <li>Python</li>
-                        <li>HTML & CSS</li>
-                        <li>Java</li>
-                        <li>JavaScript</li>
-                        <li>C++</li>
-                    </ul>
-                </div>
-                <div id="frameworks">
-                    <h2>Frameworks, Libraries and Tools</h2>
-                    <ul>
-                        <li>Python</li>
-                        <li>HTML & CSS</li>
-                        <li>Java</li>
-                        <li>JavaScript</li>
-                        <li>C++</li>
-                    </ul>
+                <h1 id="skills-title">Skills</h1>
+                <div id="skill-container">
+                    <div id="languages">
+                        <h2>Languages</h2>
+                        <div class="skills-container-mini">
+                            <div class="skill-items">HTML & CSS</div>
+                            <div class="skill-items">Python</div>
+                            <div class="skill-items">Java</div>
+                            <div class="skill-items">JavaScript</div>
+                            <div class="skill-items">C & C++</div>
+                            <div class="skill-items">PHP</div>
+                        </div>
+                    </div>
+                    <div id="frameworks">
+                        <h2>Frameworks, Libraries and Tools</h2>
+                        <div class="skills-container-mini">
+                            <div class="skill-items">React</div>
+                            <div class="skill-items">Node</div>
+                            <div class="skill-items">Express</div>
+                            <div class="skill-items">MySQL</div>
+                            <div class="skill-items">MongoDB</div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section id="experience">
-
+                <h1 id="experience-title">
             </section>
             <section id="projects"></section>
             <section id="contact"></section>
+            <script src="main.js"></script>
     </body>
 </html>

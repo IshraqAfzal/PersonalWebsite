@@ -1,51 +1,91 @@
+/* Variables */
+:root{
+    --background-colour: #023436;
+    --text-colour: rgba(255, 255, 255, 0.75);
+    --container-colour:  #037971;
+    --header-colour: #049A8F;
+    --title-colour:  #66fcf1;
+
+    --name-size: ;
+    --title-size: ;
+    --text-size: ;
+}
+
 /* General */
 
 *{
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: "Poppins", sans-serif;
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
-}
-
-a:visited{
-    color: grey;
+    box-sizing: border-box;
 }
 
 section{
-    min-height: 70vh;
-    margin: 5vh;
-    padding: 2vh;
-    border: 1vh black dotted;
+    padding-top: 10vh;
+    min-height: 100vh;
+    max-height: fit-content;
+    margin: 15vh;
+    margin-bottom: 20vh;
+}
+
+body {
+    background-color: var(--background-colour);
+}
+
+h1 {
+    text-align: center;
+    color: var(--title-colour);
+    font-size: 10vh;
+    font-weight: bolder;
+    margin-bottom: 3vh;
 }
 
 /* Header */
 
 header{
-    border: 1vh black dotted;
+    font-size: 3vh;
+    margin: 5vh;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: 15vh;
-    color: gray;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    background-color: #023436;
+    z-index: 1;
 }
 
 #my-name{
+    font-size: 5vh;
+    font-weight: bolder;
+    color: #049A8F;
     flex: 1;
-    font-size: 25px;
 }
 
 /* Navigation Menus */
 
-#nav-bar{
-    flex:1;
+.nav-item, .burger-item{
+    font-weight: bold;
+    color: #049A8F;
 }
-#hamburger-menu{
-    display: none;
+
+.nav-item:hover, .burger-item:hover {
+    font-size: 3.5vh;
+    text-decoration: underline;
+    color: #66fcf1;
+}
+
+#my-name:hover{
+    font-size: 6vh;
+    color: #66fcf1;
+}
+
+#nav-bar{
+    flex: 1;
 }
 
 #nav-bar ul{
@@ -54,16 +94,141 @@ header{
     gap: 10vh;
 }
 
-.nav-item{
+.nav-bar ul li {
     flex: 1;
 }
+
 /* Transitions */
 
-a, .button{
-    transition: all 300ms ease;
+
+/* Profile Section */
+
+#profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
 }
 
+#hello-text{
+    color: #45a29e;
+    font-weight: bolder;
+    font-size: 3vh;
+}
 
-#hello{
+#first-name, #second-name {
+    height: 20vh;
+    font-size: 20vh;
+    font-weight: bolder;
+    color: #66fcf1;
+}
+
+#first-name{
+    position: relative;
+    top: -5vh;
+}
     
+
+#second-name{
+    position: relative;
+    bottom: 10vh;
 }
+
+
+#button-containers{
+    display: flex;
+    flex-direction: row;
+    gap: 5vh;
+}
+
+.button{
+    background-color: #71fff875;
+    border: 5px solid #037971;
+    box-shadow: 0 0 1px 1px #046164;
+    height: 15vh;
+    width: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20vh;
+    font-size: 3vh;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+}
+
+.button:hover{
+    height: 18vh;
+    width: 32vh;
+    background-color: #71fff8a0;
+    color: white;
+    font-size: 3.5vh;
+}
+
+/* About */
+
+#about-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5vh;
+}
+
+#myself-pic{
+    height: 50vh;
+    border-radius: 20%;
+}
+
+#about-me-paragraph{
+    min-height: 80vh;
+    max-height: fit-content;
+    padding: 5vh;
+    background-color: #037971;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4vh;
+    color: rgba(255, 255, 255, 0.75);
+    border-radius: 40px;
+}
+
+/* Skills */
+
+#skill-container {
+    display: flex;
+    gap:10vh;
+}
+
+#languages, #frameworks{
+    flex: 1;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 5vh;
+}
+
+h2{
+    font-size: 4.5vh;
+    text-align: center;
+}
+
+.skills-container-mini{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+    height: 60vh;
+}
+
+.skill-items{
+    text-align: center;
+    width: 40%;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: bold;
+    background-color: #037971;
+    font-size: 4vh;
+    border-radius: 20px;
+}
+
+
+
+
