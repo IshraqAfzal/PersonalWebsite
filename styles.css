@@ -270,4 +270,9 @@ header{
     color: var(--text-colour);
 }
 
+.experience-mini-containers:hover, .project-mini-containers:hover {
+    height: 55vh;
+    width: 35%;
+    background-color: #05b5a9;
+}
 
