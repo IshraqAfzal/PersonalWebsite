@@ -249,7 +249,8 @@ header{
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
     background-color: var(--container-colour);
     width: 30%;
-    height: 50vh;
+    min-height: 50vh;
+    max-height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -270,11 +271,17 @@ header{
     font-size: var(--text-size);
 }
 
-.date{
+.date, .description {
     text-align: center;
     font-style: italic;
     font-weight: bold;
     color: var(--text-colour);
+}
+
+.description {
+    display: none;
+    font-size: 3.5vh;
+    color: white;
 }
 
 .experience-mini-containers:hover, .project-mini-containers:hover {
