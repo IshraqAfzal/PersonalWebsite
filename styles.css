@@ -93,6 +93,7 @@ header{
 #nav-bar ul{
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     gap: 10vh;
 }
 
@@ -146,7 +147,7 @@ header{
 .button{
     background-color: #71fff875;
     border: 5px solid #037971;
-    box-shadow: 0 0 1px 1px #046164;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
     height: 15vh;
     width: 30vh;
     display: flex;
@@ -165,10 +166,14 @@ header{
     background-color: #71fff8a0;
     color: white;
     font-size: 3.5vh;
+    box-shadow: 0px 5px 50px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* About */
 
+#about h1{
+    margin: 0px;
+}
 #about-container{
     display: flex;
     flex-direction: row;
@@ -189,10 +194,52 @@ header{
     font-size: var(--text-size);
     color: var(--text-colour);
     border-radius: 40px;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 #here:hover{
     font-size: 3.5vh;
+}
+
+/* Contact */
+
+#contact{
+    padding-top: 3vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contact div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+.contact-item{
+    padding: 2vh;
+    width: 100%;
+    background: var(--text-colour);
+    text-align: center;
+    font-size: 3vh;
+    border-radius: 20px;
+    border: 3px solid var(--container-colour);
+    /*box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);*/
+}
+
+.contact-item {
+    color: var(--background-colour);
+    font-weight: bolder;
+}
+
+#contact h1 {
+    font-size: 7vh;
+}
+
+.contact-item:hover {
+    border-radius: 100px;
+    box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.5);
 }
 /* Skills */
 
@@ -225,6 +272,7 @@ header{
     background-color: #037971;
     font-size: 4vh;
     border-radius: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Experience */
@@ -237,9 +285,8 @@ header{
 }
 
 .experience-mini-containers, .project-mini-containers{
-    border: 5px solid white;
     border-radius: 20px;
-    box-shadow: 0 0 2px 1px white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
     background-color: var(--container-colour);
     width: 30%;
     height: 50vh;
@@ -274,5 +321,9 @@ header{
     height: 55vh;
     width: 35%;
     background-color: #05b5a9;
+    box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.5)
 }
+
+
+
 

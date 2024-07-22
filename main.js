@@ -15,3 +15,19 @@ Array.from(elements).forEach((obj) => {
     })
   })
 })
+
+document.getElementById("linkedin").addEventListener("click", (event)=>{
+  window.location.href = "https://www.linkedin.com/in/ishraqafzal"
+})
+
+document.getElementById("email").addEventListener("click", (event)=>{
+  window.location.href = "mailto:ishraqafzal407@gmail.com"
+})
+
+document.getElementById("instagram").addEventListener("click", (event)=>{
+  window.location.href = ""
+})
+
+document.getElementById("github").addEventListener("click", (event)=>{
+  window.location.href = "https://github.com/IshraqAfzal"
+})
